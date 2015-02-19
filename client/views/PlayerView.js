@@ -12,9 +12,7 @@ var PlayerView = Backbone.View.extend({
     this.model = song;
     this.render();
   },
-  ended: function(songQueue){
-    //songQueue.shift();
-    this.model = songQueue.playFirst();
+  ended: function(){
     this.render();
   },
 
